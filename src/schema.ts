@@ -3,6 +3,7 @@ import { gql } from "apollo-server-express";
 export const typeDefs = gql`
   type Query {
     getWeatherByPlaceId(id: Int!): CurrentWeather!
+    getWeatherByPlaceName(name: String!): CurrentWeather!
   }
 
 
